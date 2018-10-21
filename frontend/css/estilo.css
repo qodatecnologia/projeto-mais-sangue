@@ -1,0 +1,28 @@
+body{
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+}
+
+.titulos{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.paragrafos{
+ 
+  text-align: center; 
+  font-family: 'EB Garamond', serif;  
+}
+
+.paragrafoinicios{
+  text-align: 25px; 
+  font-family: 'EB Garamond', serif;  
+  font-size: 25px;  
+}
+
+.par{
+  box-shadow: 0 2px 5px black;
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "projeto-s2b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andweber92/projeto-mais-sangue"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.3",
+    "express": "~4.16.3",
+    "mongoose": "~5.3.2",
+    "request": "~2.88.0"
+  },
+  "author": "Anderson Weber, Yago, Samir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andweber92/projeto-mais-sangue/issues"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}

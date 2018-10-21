@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	
+	<script src="js/jquery-2.1.3.min.js"></script>
+	
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	
+	<link rel="shortcut icon"  href="img/gota.jpg">
+	<script src="main.js"></script>
+	<meta charset="utf-8">
+	<title>+Sangue</title>
+</head>
+<body>
+	<h1 class="titulos"> Projeto + Sangue </h1>
+	<p class="paragrafos"> Projeto realizado pela Microsoft em parceria com a PUCRS no Students to business 2018/2 trilha sistemas web com angular/node e javascript  </p>
+	<p class="paragrafos"> Projeto que visa conectar aqueles que precisam de sangue em POA com aqueles que tem sangue e ideais altruístas de forma mais pessoal: o sistema desenvolvido em Javascript faz com que o conceito de doar sangue seja extendido de pessoa para pessoa e não de pessoa a bancos de sangue, demonstrando o perfil de quem vai receber o sangue e localização de acordo com a compatibilidade de sangues.
+Uma rede social com objetivos altruístas, afinal, 1% dos brasileiros doam sangue anualmente: lamentável.  </p>
+	<h2 class="titulos"> Veja nossos pontos de doação ! </h2>
+	<div align="center">
+	<iframe src="https://www.google.com/maps/d/embed?mid=1OeZExLBATqDdsltPc_s0UPqv1B5X4-1j" width="100%" height="50%"></iframe>
+	</div>
+	<br><br><br>
+	
+	<form id="doador">
+				<div class="par">
+				<p class="paragrafoinicios">Quero DOAR</p>
+				<p class="paragrafos"> Nome :  <input type="text" name="nome" id="nome"placeholder="Digite o seu nome">Nome </p>
+				<p class="paragrafoinicios"> Selecione o seu tipo sanguíneo </p>
+					<select id="sangue"> 
+						<option>Não sei meu tipo sanguíneo!</option>
+						<option>A+</option>
+						<option>A-</option>
+						<option>B+</option>
+						<option>B+</option>
+						<option>AB+</option>
+						<option>AB-</option>
+						<option>O+</option>
+						<option>O-</option>
+					</select> </p>
+				<br>
+				<button type="submit" name="submit"> Enviar dados </button>
+				<button type="reset"> Apagar dados </button>
+	</form>
+	<br>
+	</div>
+
+	<br><br><br>
+	<div class="par">
+		<form id="receptor">
+			<p class="paragrafoinicios"> Quero RECEBER</p>
+			<p class="paragrafos">Nome:<input type="text" name="nomer" id="nomer" placeholder="Digite o seu nome"> </p>
+			<p class="paragrafoinicios"> Selecione o Hospital que você gostaria de receber o sangue</p>
+				<select id="hosp"> 
+				<option> Santa Casa </option>
+				<option> Hospital Mãe de Deus </option>
+				<option>Hospital de Clinícas </option>
+				<option> Hospital Moinhos de vento </option>
+				<option> Hospital Conceição </option>
+				<option> Hemocentro RS </option>
+				<option> Laboratório </option>
+				<option> Hospital São lucas da PUC </option>
+				<option> Hospital Divina Providência </option>
+				</select><br> 
+			<label>Selecione o tipo sanguíneo que você deseja receber</label><br>
+				<input type="checkbox" name="sanguer" id="sanguer">A+
+				<input type="checkbox" name="sanguer" id="sanguer">A-
+				<input type="checkbox" name="sanguer" id="sanguer">B+
+				<input type="checkbox" name="sanguer" id="sanguer">B-
+				<input type="checkbox" name="sanguer" id="sanguer">AB+
+				<input type="checkbox" name="sanguer" id="sanguer">AB-
+				<input type="checkbox" name="sanguer" id="sanguer">O+
+				<input type="checkbox" name="sanguer" id="sanguer">O-<br>
+				<button type="submit"> Enviar dados </button>
+		</form>
+	<br><br><br>
+	</div>
+	 
+     <p align="center">&copy;Criado e desenvolvido por Yago , Samir e Weber.</p></div>
+</body>
+</html>
