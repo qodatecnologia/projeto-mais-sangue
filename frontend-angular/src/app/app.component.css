@@ -1,0 +1,47 @@
+.body {
+    position: relative;
+    height: 100%;
+}
+
+.container-map {
+    height: 50%;
+    position: relative;
+}
+
+.containt-map {
+    height: 100%;
+    width: 100%
+}
+
+agm-map {
+    height: 100%;
+    width: 100%;
+}
+
+.mais-sangue {
+    font-size: 60px;
+    font-weight:900;
+    position: relative;
+    text-align: center;
+    top: -20px;    
+    /* position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) */
+}
+
+.custom-widget-title {
+    background: #000;
+    color: #fff;
+    line-height: 44px;
+}
+
+@media (max-width: 906px) {
+
+    .mais-sangue {
+        font-size: 35px;
+        font-weight:900;
+    }
+        
+} 

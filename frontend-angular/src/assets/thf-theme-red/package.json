@@ -1,0 +1,41 @@
+{
+  "name": "@totvs/thf-theme-red",
+  "version": "2.4.0",
+  "tag": "dev",
+  "description": "TOTVS HTML Framework - Theme Red",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://totvstfs.visualstudio.com/THF/_git/cdn-thf-core"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "build:all": "npm run build && npm run build:kendo",
+    "build:app": "gulp build:app",
+    "build:kendo": "gulp build --theme kendo",
+    "watch": "gulp watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "capitalize": "^1.0.0",
+    "cssnano": "^4.1.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^1.1.0",
+    "gulp-inject-string": "^1.1.1",
+    "gulp-json-modify": "^1.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-remove-empty-lines": "^0.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-strip-css-comments": "^2.0.0",
+    "gulp-tap": "^1.0.1",
+    "postcss-apply": "^0.11.0",
+    "postcss-custom-properties": "^7.0.0",
+    "postcss-import": "^12.0.0",
+    "postcss-nested": "^4.1.0",
+    "vinyl-paths": "^2.1.0",
+    "yargs": "^12.0.2"
+  }
+}
