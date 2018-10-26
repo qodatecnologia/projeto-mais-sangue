@@ -16,61 +16,77 @@
         t-no-shadow=true>
     
         <div class="thf-font-subtitle thf-text-center custom-widget-title">QUERO RECEBER</div>
-        
-        <thf-input
-          class="thf-md-12"
-          name="name"
-          t-clean
-          t-icon="thf-icon-user"
-          t-minlength="3"
-          t-placeholder="Insira o Nome completo"
-          t-required>
-        </thf-input>
+        <form #formUser="ngForm">
+          <thf-input
+            class="thf-md-12"
+            name="name"
+            [(ngModel)]="receptor.name"
+            t-clean
+            t-icon="thf-icon-user"
+            t-minlength="3"
+            t-placeholder="Insira o Nome completo"
+            t-required>
+          </thf-input>
 
-        <thf-email
-          class="thf-md-12"
-          name="email"
-          t-clean
-          t-placeholder="Insira seu Email"
-          t-required>
-        </thf-email>
+          <thf-input
+            class="thf-md-12"
+            name="localization"
+            [(ngModel)]="receptor.localization"
+            t-clean
+            t-icon="thf-icon-map"
+            t-minlength="3"
+            t-placeholder="Insira sua localização"
+            t-required>
+          </thf-input>
 
-        <thf-input
-          class="thf-md-12"
-          name="localizacao"
-          t-clean
-          t-icon="thf-icon-map"
-          t-minlength="3"
-          t-placeholder="Insira suar localização"
-          t-required>
-        </thf-input>
+          <thf-input
+            class="thf-md-12"
+            name="bloodType"
+            [(ngModel)]="receptor.bloodType"
+            t-clean
+            t-icon="thf-icon-picker"
+            t-minlength="3"
+            t-placeholder="Insira seu tipo sanguineo"
+            t-required>
+          </thf-input>
 
-        <thf-input
-          class="thf-md-12"
-          name="tipoSanguineo"
-          t-clean
-          t-icon="thf-icon-picker"
-          t-minlength="3"
-          t-placeholder="Insira seu tipo sanguineo"
-          t-required>
-        </thf-input>      
+          <thf-input
+            class="thf-md-12"
+            name="hospital"
+            [(ngModel)]="receptor.hospital"
+            t-clean
+            t-icon="thf-icon-company"
+            t-placeholder="Hospital"
+            t-required>
+          </thf-input>            
 
-        <thf-input
-          class="thf-md-12"
-          name="historia"
-          t-clean
-          t-icon="thf-icon-edit"
-          t-placeholder="Insira sua história"
-          t-required>
-        </thf-input>
+          <thf-input
+            class="thf-md-12"
+            name="history"
+            [(ngModel)]="receptor.history"
+            t-clean
+            t-icon="thf-icon-edit"
+            t-placeholder="Insira sua história"
+            t-required>
+          </thf-input>
 
-        <thf-button
-          class="thf-md-12 thf-mt-5"
-          t-label="ENVIAR DADOS"
-          (t-click)="onClick()"
-          t-type="primary">
-        </thf-button>
+          <thf-input
+            class="thf-md-12"
+            name="phone"
+            [(ngModel)]="receptor.phone"
+            t-clean
+            t-icon="thf-icon-telephone"
+            t-placeholder="Telefone"
+            t-required>
+          </thf-input>              
 
+          <thf-button
+            class="thf-md-12 thf-mt-5"
+            t-label="ENVIAR DADOS"
+            (t-click)="sendReceptor()"
+            t-type="primary">
+          </thf-button>
+        </form>
       </thf-widget>
 
       <thf-widget
@@ -78,43 +94,46 @@
         t-no-shadow=true>
     
         <div class="thf-font-subtitle thf-text-center custom-widget-title">QUERO DOAR</div>
+        <form #formUser="ngForm">
+          <thf-input
+            class="thf-md-12"
+            name="bloodType"
+            [(ngModel)]="donor.bloodType"
+            t-clean
+            t-icon="thf-icon-picker"
+            t-minlength="1"
+            t-placeholder="Insira seu tipo sanguineo"
+            t-required>
+          </thf-input>     
 
-        <thf-input
-          class="thf-md-12"
-          name="tipoSanguineo"
-          t-clean
-          t-icon="thf-icon-picker"
-          t-minlength="1"
-          t-placeholder="Insira seu tipo sanguineo"
-          t-required>
-        </thf-input>     
+          <thf-input
+            class="thf-md-12"
+            name="name"
+            [(ngModel)]="donor.name"
+            t-clean
+            t-icon="thf-icon-user"
+            t-minlength="3"
+            t-placeholder="Insira o Nome completo"
+            t-required>
+          </thf-input> 
 
-        <thf-input
-          class="thf-md-12"
-          name="name"
-          t-clean
-          t-icon="thf-icon-user"
-          t-minlength="3"
-          t-placeholder="Insira o Nome completo"
-          t-required>
-        </thf-input> 
+          <thf-input
+            class="thf-md-12"
+            name="phone"
+            [(ngModel)]="donor.phone"
+            t-clean
+            t-icon="thf-icon-telephone"
+            t-placeholder="Insira seu telefone"
+            t-required>
+          </thf-input>
 
-        <thf-input
-          class="thf-md-12"
-          name="phone"
-          t-clean
-          t-icon="thf-icon-telephone"
-          t-placeholder="Insira seu telefone"
-          t-required>
-        </thf-input>
-
-        <thf-button
-          class="thf-md-12 thf-mt-5"
-          t-label="ENVIAR DADOS"
-          (t-click)="onClick()"
-          t-type="primary">
-        </thf-button>        
-
+          <thf-button
+            class="thf-md-12 thf-mt-5"
+            t-label="ENVIAR DADOS"
+            (t-click)="sendDonor()"
+            t-type="primary">
+          </thf-button>        
+        </form>
       </thf-widget>
 
     </div>
