@@ -1,4 +1,15 @@
 <h1>Projeto Mais Sangue</h1>
-<img src="https://uploaddeimagens.com.br/images/001/681/112/original/WhatsApp_Image_2018-10-21_at_15.09.15.jpeg?1540145679">
-<h3>Acesse o diretório /app e execute NPM START para conexão que ocorrerá em localhost:8000/api</h3>
-<h3>Formulário html em index.html enviando via ajax(main.js) para o MLAB(mongodb na nuvem)</h3>
+
+Para subir o projeto:
+
+Pré-requisitos:
+    Node.js e NPM.
+    Angular CLI
+
+1 - Certifique-se  que seu terminal esteja apontando para o caminho raiz da aplicação, 'projeto-mais-sangue/frontend-angular' então execute o comando:
+
+npm install
+
+2 -  Execute o seguinte comando para subi-lá em um servidor local, dispobilizado pelas depedências do Angular CLI:
+
+ng server
